@@ -1,0 +1,82 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url(./assets/images/background-desktop.png);
+  color: white;
+  padding: 10px;
+}
+.main-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  background: rgb(76, 82, 75);
+  padding: 10px;
+  border-radius: 0.5rem;
+  height: 80vh;
+}
+.avatar {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 1rem;
+  
+  padding: 10px;
+  div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px dotted white;
+    border-radius: 0.5rem;
+    gap: 1rem;
+    padding: 10px;
+    img{
+        &:hover{
+            cursor: pointer;
+        }
+    }
+  }
+}
+.input{
+    display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 10px;
+  input{
+    width: 250px;
+    height: 35px;
+    border-radius: 0.5rem;
+    background: transparent;
+    border: 1px solid white;
+    padding: 10px;
+    &:focus{
+        color: white;
+        background: black;
+    }
+  }
+}
+#button{
+width: 250px;
+height: 35px;
+border-radius: 0.5rem;
+cursor: pointer;
+color: black;
+background: orange;
+box-shadow: none;
+&:hover{
+    transform: scale(1.1);
+}
+}
